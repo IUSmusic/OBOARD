@@ -1,143 +1,67 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AR Keyboard Layout Presentation</title>
-    <meta name="description" content="Static GitHub Pages presentation for an AR keyboard layout with mapped key bindings and finger zones." />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div>
-        <p class="eyebrow">AR keyboard / layout presentation</p>
-        <h1>HTML recreation of the mapped keyboard</h1>
-        <p class="lede">The page is centered on the actual keyboard layout and the finger-zone mapping from the supplied reference images.</p>
-      </div>
-      <div class="controls" aria-label="Display controls">
-        <button type="button" data-toggle="guides" class="is-active">Guides</button>
-        <button type="button" data-toggle="labels" class="is-active">Labels</button>
-        <button type="button" data-toggle="references">References</button>
-      </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AR Keyboard Layout — SVG Reconstruction</title>
+  <meta name="description" content="Static GitHub Pages presentation for the AR keyboard layout and mapped finger zones.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="page-header">
+      <p class="eyebrow">AR keyboard / mapped layout</p>
+      <h1>Exact SVG recreation of the supplied keyboard map</h1>
+      <p class="lede">
+        This page is built around a hand-tuned SVG reconstruction of the keyboard geometry, key bindings,
+        and finger-zone guides shown in the supplied reference images.
+      </p>
     </header>
 
-    <main>
-      <section class="stage-panel">
-        <div class="keyboard-stage" id="keyboardStage">
-          <div class="stage-glow"></div>
-          <div class="stage-rim"></div>
-          <div class="zone zone-left guides"></div>
-          <div class="zone zone-center guides"></div>
-          <div class="zone zone-right guides"></div>
+    <section class="controls" aria-label="Display controls">
+      <button type="button" class="control is-active" data-toggle="labels">Finger labels</button>
+      <button type="button" class="control is-active" data-toggle="guides">Guide lines</button>
+      <button type="button" class="control" data-toggle="reference">Reference overlay</button>
+      <label class="overlay-control" for="overlayOpacity">
+        <span>Overlay opacity</span>
+        <input id="overlayOpacity" type="range" min="0" max="100" value="45">
+      </label>
+    </section>
 
-          <div class="finger-text finger-left labels" aria-hidden="true">
-            <span class="th">th</span>
-            <span class="u">u</span>
-            <span class="m">m</span>
-            <span class="b">b</span>
-          </div>
+    <section class="stage-card">
+      <div class="stage" id="stage">
+        <img id="referenceOverlay" class="reference-overlay" src="assets/reference-mapped.png" alt="Mapped keyboard reference overlay">
+        <svg id="keyboardSvg" viewBox="0 0 1376 768" role="img" aria-labelledby="svgTitle svgDesc">
+          <title id="svgTitle">AR keyboard layout recreation</title>
+          <desc id="svgDesc">SVG reconstruction of the oval AR keyboard with hexagonal keys, exact mapped bindings, and finger-zone guides.</desc>
+        </svg>
+      </div>
+    </section>
 
-          <div class="finger-text finger-center labels" aria-hidden="true">
-            <span class="three">3</span>
-            <span class="middle">middl</span>
-            <span class="e">e</span>
-            <span class="finger">finger</span>
-            <span class="s">s</span>
-          </div>
+    <section class="reference-grid">
+      <article class="reference-card">
+        <h2>Mapped reference</h2>
+        <img src="assets/reference-mapped.png" alt="Original mapped AR keyboard reference image">
+      </article>
+      <article class="reference-card">
+        <h2>Outline reference</h2>
+        <img src="assets/reference-outline.png" alt="Outline AR keyboard reference image">
+      </article>
+    </section>
 
-          <div class="finger-text finger-right labels" aria-hidden="true">
-            <span class="pin">Pin</span>
-            <span class="ky">ky</span>
-            <span class="fin">Fin</span>
-            <span class="ge">ge</span>
-            <span class="r">r</span>
-          </div>
+    <section class="notes-card">
+      <h2>Repository notes</h2>
+      <p>
+        The repository includes a custom <strong>All Rights Reserved</strong> license and a patent / trademark notice.
+        The code and presentation are published for display of the design, not for reuse.
+      </p>
+    </section>
 
-          <div class="board" role="img" aria-label="AR keyboard layout rendered in HTML with mapped key bindings and finger zones.">
-          <div class="key" style="left:45.0%; top:9.5%"><span>E</span></div>
-          <div class="key" style="left:54.0%; top:9.5%"><span>F</span></div>
-          <div class="key" style="left:63.0%; top:9.5%"><span>G</span></div>
-          <div class="key" style="left:31.0%; top:18.5%"><span>1</span></div>
-          <div class="key" style="left:39.0%; top:18.5%"><span>A</span></div>
-          <div class="key" style="left:47.0%; top:18.5%"><span>X</span></div>
-          <div class="key" style="left:56.0%; top:18.5%"><span>Y</span></div>
-          <div class="key" style="left:65.0%; top:18.5%"><span>B</span></div>
-          <div class="key" style="left:74.0%; top:18.5%"><span>2</span></div>
-          <div class="key" style="left:27.5%; top:27.5%"><span>3</span></div>
-          <div class="key" style="left:37.0%; top:27.5%"><span>C</span></div>
-          <div class="key" style="left:48.0%; top:27.5%"><span>L</span></div>
-          <div class="key" style="left:56.0%; top:27.5%"><span>M</span></div>
-          <div class="key" style="left:64.0%; top:27.5%"><span>N</span></div>
-          <div class="key" style="left:75.0%; top:27.5%"><span>D</span></div>
-          <div class="key" style="left:82.5%; top:27.5%"><span>4</span></div>
-          <div class="key wide enter" style="left:91.0%; top:27.5%"><span>enter</span></div>
-          <div class="key" style="left:22.5%; top:36.5%"><span>5</span></div>
-          <div class="key" style="left:31.0%; top:36.5%"><span>+</span></div>
-          <div class="key" style="left:40.5%; top:36.5%"><span>H</span></div>
-          <div class="key" style="left:49.5%; top:36.5%"><span>O</span></div>
-          <div class="key" style="left:58.5%; top:36.5%"><span>P</span></div>
-          <div class="key" style="left:67.5%; top:36.5%"><span>I</span></div>
-          <div class="key" style="left:76.5%; top:36.5%"><span>6</span></div>
-          <div class="key" style="left:24.0%; top:45.5%"><span>7</span></div>
-          <div class="key" style="left:34.5%; top:45.5%"><span>Q</span></div>
-          <div class="key" style="left:44.5%; top:45.5%"><span>J</span></div>
-          <div class="key" style="left:54.5%; top:45.5%"><span>V</span></div>
-          <div class="key" style="left:64.5%; top:45.5%"><span>K</span></div>
-          <div class="key" style="left:74.5%; top:45.5%"><span>R</span></div>
-          <div class="key" style="left:84.5%; top:45.5%"><span>8</span></div>
-          <div class="key" style="left:21.5%; top:54.5%"><span>@</span></div>
-          <div class="key" style="left:29.5%; top:54.5%"><span>9</span></div>
-          <div class="key" style="left:38.5%; top:54.5%"><span>S</span></div>
-          <div class="key" style="left:47.5%; top:54.5%"><span>U</span></div>
-          <div class="key" style="left:56.5%; top:54.5%"><span>W</span></div>
-          <div class="key" style="left:65.5%; top:54.5%"><span>T</span></div>
-          <div class="key" style="left:75.5%; top:54.5%"><span>0</span></div>
-          <div class="key" style="left:85.5%; top:54.5%"><span>*</span></div>
-          <div class="key small-label" style="left:25.0%; top:63.5%"><span>shift</span></div>
-          <div class="key small-label" style="left:34.0%; top:63.5%"><span>ctrl</span></div>
-          <div class="key" style="left:43.0%; top:63.5%"><span>!</span></div>
-          <div class="key" style="left:52.0%; top:63.5%"><span>Z</span></div>
-          <div class="key" style="left:61.0%; top:63.5%"><span>?</span></div>
-          <div class="key" style="left:71.0%; top:63.5%"><span>.</span></div>
-          <div class="key" style="left:80.0%; top:63.5%"><span>-</span></div>
-          <div class="key small-label" style="left:37.0%; top:73.0%"><span>alt</span></div>
-          <div class="key" style="left:46.0%; top:73.0%"></div>
-          <div class="key wide space" style="left:55.0%; top:74.5%"><span>space</span></div>
-          <div class="key" style="left:64.0%; top:73.0%"></div>
-          <div class="key" style="left:73.0%; top:73.0%"><span>,</span></div>
-          <div class="key" style="left:82.0%; top:73.0%"></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="notes-grid">
-        <article class="note-card">
-          <h2>Zone interpretation</h2>
-          <p><strong>Left zone:</strong> thumb.</p>
-          <p><strong>Center zone:</strong> 3 middle fingers.</p>
-          <p><strong>Right zone:</strong> pinky finger.</p>
-        </article>
-        <article class="note-card">
-          <h2>Repository protection</h2>
-          <p>This bundle includes a proprietary <strong>All Rights Reserved</strong> license, a copyright notice, and an explicit patent-rights reservation for the layout, visuals, and site code.</p>
-        </article>
-      </section>
-
-      <section class="references" id="references" hidden>
-        <h2>Source references used for the HTML reconstruction</h2>
-        <div class="reference-grid">
-          <figure>
-            <img src="01.png" alt="Line-art reference image supplied by the author." />
-            <figcaption>Line-art reference</figcaption>
-          </figure>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
+    <footer class="footer">
       <p>© 2026 Pezhman Farhangi. All rights reserved.</p>
     </footer>
+  </main>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="app.js"></script>
+</body>
 </html>
