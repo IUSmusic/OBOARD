@@ -3,65 +3,73 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AR Keyboard Layout — SVG Reconstruction</title>
-  <meta name="description" content="Static GitHub Pages presentation for the AR keyboard layout and mapped finger zones.">
+  <title>HEXBOARD — Finger Zone Map Fusion</title>
+  <meta name="description" content="Fused GitHub Pages section combining the uploaded Finger Zone Map styling with an exact SVG reconstruction of the AR keyboard layout.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=IBM+Plex+Mono:wght@300;400;500&family=Exo+2:wght@200;300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="page">
-    <header class="page-header">
-      <p class="eyebrow">AR keyboard / mapped layout</p>
-      <h1>Exact SVG recreation of the supplied keyboard map</h1>
-      <p class="lede">
-        This page is built around a hand-tuned SVG reconstruction of the keyboard geometry, key bindings,
-        and finger-zone guides shown in the supplied reference images.
-      </p>
-    </header>
+  <main class="shell">
+    <section id="layout" class="layout-section">
+      <div class="layout-inner">
+        <p class="section-tag">Interactive Layout</p>
+        <h1>Finger <em>Zone</em> Map</h1>
+        <p class="section-intro">
+          The keyboard is divided into three vertical zones. The outer-left columns are operated by the
+          <strong class="tone-thumb">thumb</strong>, the wide centre band by the
+          <strong class="tone-middle">three middle fingers</strong> (index, middle, ring),
+          and the outer-right columns by the <strong class="tone-pinky">pinky</strong>.
+          This fused version keeps that section styling and legend, but swaps the rough hex mockup for the exact SVG reconstruction of your mapped keyboard.
+        </p>
 
-    <section class="controls" aria-label="Display controls">
-      <button type="button" class="control is-active" data-toggle="labels">Finger labels</button>
-      <button type="button" class="control is-active" data-toggle="guides">Guide lines</button>
-      <button type="button" class="control" data-toggle="reference">Reference overlay</button>
-      <label class="overlay-control" for="overlayOpacity">
-        <span>Overlay opacity</span>
-        <input id="overlayOpacity" type="range" min="0" max="100" value="45">
-      </label>
-    </section>
+        <section class="controls" aria-label="Display controls">
+          <button type="button" class="control is-active" data-toggle="zones">Zone colours</button>
+          <button type="button" class="control is-active" data-toggle="labels">Finger labels</button>
+          <button type="button" class="control is-active" data-toggle="guides">Guide lines</button>
+          <button type="button" class="control" data-toggle="reference">Reference overlay</button>
+          <label class="overlay-control" for="overlayOpacity">
+            <span>Overlay opacity</span>
+            <input id="overlayOpacity" type="range" min="0" max="100" value="45">
+          </label>
+        </section>
 
-    <section class="stage-card">
-      <div class="stage" id="stage">
-        <img id="referenceOverlay" class="reference-overlay" src="assets/reference-mapped.png" alt="Mapped keyboard reference overlay">
-        <svg id="keyboardSvg" viewBox="0 0 1376 768" role="img" aria-labelledby="svgTitle svgDesc">
-          <title id="svgTitle">AR keyboard layout recreation</title>
-          <desc id="svgDesc">SVG reconstruction of the oval AR keyboard with hexagonal keys, exact mapped bindings, and finger-zone guides.</desc>
-        </svg>
+        <div class="stage-card reveal visible">
+          <div class="stage" id="stage">
+            <img id="referenceOverlay" class="reference-overlay" src="assets/reference-mapped.png" alt="Mapped keyboard reference overlay">
+            <svg id="keyboardSvg" viewBox="0 0 1376 768" role="img" aria-labelledby="svgTitle svgDesc">
+              <title id="svgTitle">HEXBOARD fused finger zone map</title>
+              <desc id="svgDesc">Exact SVG reconstruction of the AR keyboard with the uploaded finger-zone colour system fused into the precise geometry.</desc>
+            </svg>
+          </div>
+        </div>
+
+        <div class="hover-readout" id="hoverReadout">Hover a key to inspect its assigned zone.</div>
+
+        <div class="finger-legend">
+          <div class="legend-item"><div class="legend-swatch thumb"></div> Thumb — outer left columns</div>
+          <div class="legend-item"><div class="legend-swatch middle"></div> 3 Middle Fingers — centre zone</div>
+          <div class="legend-item"><div class="legend-swatch pinky"></div> Pinky — outer right columns</div>
+        </div>
+
+        <section class="reference-grid">
+          <article class="reference-card">
+            <h2>Mapped reference</h2>
+            <img src="assets/reference-mapped.png" alt="Mapped keyboard reference image">
+          </article>
+          <article class="reference-card">
+            <h2>Outline reference</h2>
+            <img src="assets/reference-outline.png" alt="Outline keyboard reference image">
+          </article>
+        </section>
       </div>
-    </section>
-
-    <section class="reference-grid">
-      <article class="reference-card">
-        <h2>Mapped reference</h2>
-        <img src="assets/reference-mapped.png" alt="Original mapped AR keyboard reference image">
-      </article>
-      <article class="reference-card">
-        <h2>Outline reference</h2>
-        <img src="assets/reference-outline.png" alt="Outline AR keyboard reference image">
-      </article>
-    </section>
-
-    <section class="notes-card">
-      <h2>Repository notes</h2>
-      <p>
-        The repository includes a custom <strong>All Rights Reserved</strong> license and a patent / trademark notice.
-        The code and presentation are published for display of the design, not for reuse.
-      </p>
     </section>
 
     <footer class="footer">
       <p>© 2026 Pezhman Farhangi. All rights reserved.</p>
     </footer>
   </main>
-
   <script src="app.js"></script>
 </body>
 </html>
