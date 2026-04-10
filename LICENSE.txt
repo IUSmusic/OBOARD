@@ -1,0 +1,21 @@
+AR Keyboard Layout Site and Design Materials
+Custom Proprietary License — All Rights Reserved
+
+Copyright (c) 2026 Pezhman Farhangi
+All rights reserved.
+
+1. No permission is granted to use, copy, reproduce, modify, adapt, publish, distribute, sublicense, sell, or create derivative works from any part of this repository or bundle, including but not limited to:
+   - the keyboard layout design,
+   - the mapping concept as expressed in these materials,
+   - images, diagrams, labels, styling, documentation, and presentation assets,
+   - HTML, CSS, JavaScript, and any other source files.
+
+2. The only permission granted is the limited right to view this material on GitHub or in a web browser for evaluation and reference of authorship.
+
+3. No patent license, trademark license, design right license, or other intellectual-property license is granted, whether express, implied, by estoppel, or otherwise.
+
+4. Unauthorized use, copying, distribution, or derivative works are prohibited.
+
+5. This material is provided "AS IS," without warranty of any kind, to the maximum extent permitted by law.
+
+6. Any rights not expressly granted are reserved by the copyright owner.

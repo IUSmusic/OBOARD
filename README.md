@@ -1,15 +1,22 @@
-# AR Keyboard Layout
+# AR Keyboard Layout — GitHub Pages bundle
 
-This repository is a static presentation site for an original AR keyboard / keyboard layout concept.
+## Publish on GitHub Pages
 
-## What is included
+1. Create a new GitHub repository.
+2. Upload every file from this bundle to the repository root.
+3. In the repository settings, open **Pages**.
+4. Set the source to **Deploy from a branch**.
+5. Choose the `main` branch and `/root` folder.
+6. Save.
 
-- `index.html` — the landing page
-- `styles.css` — site styling
-- `script.js` — tiny enhancement for the footer year
-- `assets/` — supplied concept images
-- `LICENSE.md` — proprietary all-rights-reserved license
-- `NOTICE.md` — ownership and patent reservation notice
-- `.nojekyll` — keeps GitHub Pages from applying Jekyll processing
+The site is fully static and works as GitHub Pages without a build step.
 
+## Files
 
+- `index.html` — the presentation page
+- `styles.css` — layout and visual styling
+- `script.js` — simple display toggles
+- `assets/` — supplied reference images
+- `LICENSE.txt` — proprietary all-rights-reserved terms
+- `NOTICE.md` — copyright and patent-rights notice
+- `.nojekyll` — avoids Jekyll processing on GitHub Pages

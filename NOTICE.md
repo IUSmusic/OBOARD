@@ -1,20 +1,10 @@
-# Notice of Ownership and Reservation of Rights
+# Notice
 
-This repository is published as a public presentation of an original AR keyboard and keyboard layout concept.
+**Owner:** Pezhman Farhangi  
+**Year:** 2026
 
-## Ownership claim
-The visual design, layout presentation, diagrams, and accompanying materials are claimed as original work of the project owner.
+This repository and bundle are published with all rights reserved.
 
-## Copyright
-Copyright protects the specific expression fixed in this repository, including:
+No open-source license is granted. No patent rights are granted. No trademark rights are granted.
 
-- artwork and rendered images
-- diagrams and annotations
-- website text and presentation structure
-- the exact visual arrangement shown here
-
-## Patent reservation
-To the extent any underlying functional concept, method, or system may be patentable, all such rights are expressly reserved. Publication of this repository does not grant permission to practice, manufacture, commercialize, or derive competing implementations from the disclosed materials.
-
-## Trademark reservation
-No trademark rights, trade dress rights, or branding permissions are granted.
+The keyboard layout, mapping, presentation, visual composition, supporting files, and associated documentation are proprietary and may not be reused without prior written permission from the owner.
