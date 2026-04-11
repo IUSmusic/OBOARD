@@ -20,3 +20,24 @@ The site is fully static and works as GitHub Pages without a build step.
 - `LICENSE.txt` — proprietary all-rights-reserved terms
 - `NOTICE.md` — copyright and patent-rights notice
 - `.nojekyll` — avoids Jekyll processing on GitHub Pages
+
+
+Base
+e   f   g
+1   a   x   y   b   2
+3   c   l   m   n   d   4
+5   +   h   o   p   i   6   enter
+7   q   j   v   k   r   8
+@   9   s   u   w   t   0   *
+shift  ctrl  !   z   ?   .   -
+alt    space    ,
+
+Shift-held
+E   F   G
+!   A   X   Y   B   @
+#   C   L   M   N   D   $
+%   =   H   O   P   I   ^   enter
+&   Q   J   V   K   R   *
+~   (   S   U   W   T   )   •
+shift  ctrl  ¡   Z   ¿   :   _
+alt    space    ;
