@@ -4,36 +4,28 @@
 ![Designl](/OBoardDesign.png)https://iusmusic.github.io/
 
 
-## Publish on GitHub Pages
+# AR Keyboard Layout
 
-1. Create a new GitHub repository.
-2. Upload every file from this bundle to the repository root.
-3. In the repository settings, open **Pages**.
-4. Set the source to **Deploy from a branch**.
-5. Choose the `main` branch and `/root` folder.
-6. Save.
+**Pezhman Farhangi Registered Design**
 
-The site is fully static and works as GitHub Pages without a build step.
+A static presentation of the hexagonal AR keyboard layout, arranged on a circular disc platform with a honeycomb stagger.
+
 
 ## Files
 
-- `index.html` — the presentation page
+- `index.html` — presentation page
 - `styles.css` — layout and visual styling
-- `script.js` — simple display toggles
-- `assets/` — supplied reference images
+- `script.js` — display toggles
+- `assets/` — reference assets
 - `LICENSE.txt` — proprietary all-rights-reserved terms
 - `NOTICE.md` — copyright and patent-rights notice
-- `.nojekyll` — avoids Jekyll processing on GitHub Pages
+- `.nojekyll` — disables Jekyll processing on GitHub Pages
 
+## Hexagonal Keyboard Layout
 
-# Hexagonal Keyboard Layout
-### Pezhman Farhangi — Registered Design
+### Default Layer
 
----
-
-## Default Layer
-
-```
+```text
             e   f   g
         1   a   x   y   b   2
       3   c   l   m   n   d   4
@@ -44,11 +36,9 @@ The site is fully static and works as GitHub Pages without a build step.
           alt    [space]    ,
 ```
 
----
+### Shift Layer
 
-## Shift Layer
-
-```
+```text
             E   F   G
         !   A   X   Y   B   @
       #   C   L   M   N   D   $
@@ -58,8 +48,6 @@ The site is fully static and works as GitHub Pages without a build step.
       shift  ctrl  ¡   Z   ¿   :   _
           alt    [space]    ;
 ```
-
----
 
 ## Key Map Reference
 
@@ -74,24 +62,21 @@ The site is fully static and works as GitHub Pages without a build step.
 | 7 | `shift` `ctrl` `!` `z` `?` `.` `-` | `shift` `ctrl` `¡` `Z` `¿` `:` `_` |
 | 8 (bottom) | `alt` `space` `,` | `alt` `space` `;` |
 
----
-
 ## Special Keys
 
 | Key | Type | Notes |
 |-----|------|-------|
 | `enter` | Pill (wide) | Right of row 4, outside hex grid |
-| `space` | Pill (wide) | Centre of bottom row |
-| `shift` | Modifier hex | Activates Shift Layer |
-| `ctrl` | Modifier hex | |
-| `alt` | Modifier hex | |
+| `space` | Pill (wide) | Center of bottom row |
+| `shift` | Modifier hex | Activates Shift layer |
+| `ctrl` | Modifier hex | Control modifier |
+| `alt` | Modifier hex | Alt modifier |
 
----
+## Layout Notes
 
-## Notes
-
-- Layout uses a **honeycomb hex grid** arranged on a circular disc platform.
-- Rows alternate between 3, 6, 7, 8, 7, 8, 7 keys to form the honeycomb stagger.
-- `enter` and `space` are rendered as rounded-rectangle pill keys, not hexagons.
-- Numbers `1`–`9`, `0` and symbols `@` `*` occupy the outer columns.
-- Shift layer replaces outer-column numbers with punctuation: `!` `@` `#` `$` `%` `^` `&` `*` `(` `)`.
+- Uses a **honeycomb hex grid** arranged on a circular disc platform.
+- Rows alternate between **3, 6, 7, 8, 7, 8, 7, 3 effective positions** to create the staggered structure.
+- `enter` and `space` are **rounded pill keys**, not hexagons.
+- Numbers and symbols occupy the outer columns of the layout.
+- The Shift layer replaces outer-column numbers with punctuation: `! @ # $ % ^ & * ( )`.
+- Default legends should display in **lowercase**, unless **Shift** is held.
