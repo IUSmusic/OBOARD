@@ -66,8 +66,8 @@ A static presentation of the hexagonal AR keyboard layout, arranged on a circula
 
 | Key | Type | Notes |
 |-----|------|-------|
-| `enter` | Pill (wide) | Right of row 4, outside hex grid |
-| `space` | Pill (wide) | Center of bottom row |
+| `enter` | Hex (wide) | Right of row 4, outside hex grid |
+| `space` | Hex (wide) | Center of bottom row |
 | `shift` | Modifier hex | Activates Shift layer |
 | `ctrl` | Modifier hex | Control modifier |
 | `alt` | Modifier hex | Alt modifier |
