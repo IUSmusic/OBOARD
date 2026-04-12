@@ -1,6 +1,6 @@
 # OBOARD
 
-**Pezhman Farhangi — Registered Design**
+
 
 A static presentation of the hexagonal AR keyboard layout, arranged on a circular disc platform with a honeycomb stagger.
 
@@ -85,3 +85,4 @@ The site is fully static and works on GitHub Pages without a build step.
 - The Shift layer replaces outer-column numbers with punctuation: `! @ # $ % ^ & * ( )`.
 - Default legends should display in **lowercase**, unless **Shift** is held.
 
+**Registered Design**
