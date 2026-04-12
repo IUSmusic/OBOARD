@@ -1,5 +1,5 @@
-AR Keyboard Layout Site and Design Materials
-Custom Proprietary License — All Rights Reserved
+OBOARD Keyboard
+Custom Proprietary License - All Rights Reserved
 
 Copyright (c) 2026 Pezhman Farhangi
 All rights reserved.
