@@ -1,6 +1,6 @@
 # OBOARD
 
-![](/OBOARDdesign.png)
+![](/OBoardDesign.png)
 
 [Design](https://iusmusic.github.io/OBOARD)
 
