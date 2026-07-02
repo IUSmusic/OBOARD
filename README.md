@@ -2,6 +2,8 @@
 
 ![](/OBoardDesign.png)
 
+![](/OBoard03.png)
+
 # [Demo](https://iusmusic.github.io/OBOARD)
 
 A static presentation of the hexagonal AR keyboard layout, arranged on a circular disc platform with a honeycomb stagger.
